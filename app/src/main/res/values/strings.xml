@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="welcome">Welcome !</string>
+    <string name="todo">TODO</string>
+    <string name="login">Login</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="signup">Sign UP</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="add_notes">Add Notes</string>
+    <string name="Note">note</string>
+    <string name="search">Search</string>
+    <string name="logout">logout</string>
+</resources>
