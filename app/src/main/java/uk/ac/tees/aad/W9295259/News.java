@@ -76,4 +76,8 @@ public class News extends AppCompatActivity {
     }
 
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
 }
