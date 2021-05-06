@@ -200,7 +200,6 @@ public class Notes extends AppCompatActivity {
                                 });
 
     }
-
     void saveTextToFirebase(String text){
         if(isSearch){
             Intent intent = new Intent(getApplicationContext(),News.class);
