@@ -35,7 +35,8 @@ public class WelcomeScreen extends AppCompatActivity
             public void run() {
                 try {
                     sleep(3500);
-                    Intent intent = new Intent(getApplicationContext(),Login.class);
+                    Intent intent;
+                    intent = new Intent(getApplicationContext(),Login.class);
                     startActivity(intent);
                     finish();
                 } catch (InterruptedException e) {
