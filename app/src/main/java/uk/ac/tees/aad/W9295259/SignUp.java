@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -47,7 +48,7 @@ public class SignUp extends AppCompatActivity {
 
 
     public void register(){
-        if (!email.getText().toString().isEmpty() && !email.getText().toString().isEmpty() ){
+        if (!email.getText().toString().isEmpty()){
             email.setError("Enter Correct Value");
             email.findFocus();
         }

@@ -21,6 +21,7 @@ public class News extends AppCompatActivity {
 
     ArrayList<String>  data;
     ListView listView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -28,7 +29,7 @@ public class News extends AppCompatActivity {
         setContentView(R.layout.activity_news);
 
          listView = findViewById(R.id.listnews);
-         data = new ArrayList<String>();
+         data = new ArrayList<>();
 
         final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,data);
         listView.setAdapter(adapter);
@@ -56,9 +57,8 @@ public class News extends AppCompatActivity {
                         JsonObject jsonObject = new JsonParser().parse(fata).getAsJsonObject();
                         int size = jsonObject.get("articles").getAsJsonArray().size();
 
-
                         for (int i = 0; i < size; i++) {
-                            if (i < 200) {
+
                                 try {
                                     JsonElement loop = jsonObject.get("articles").getAsJsonArray().get(i);
                                    data.add("\n"+loop.getAsJsonObject().get("title").getAsString()
@@ -66,7 +66,6 @@ public class News extends AppCompatActivity {
                                 } catch (Exception e) {
 
                                 }
-                            }
                         }
                         adapter.notifyDataSetChanged();
                     }
