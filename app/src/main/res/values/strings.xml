@@ -11,4 +11,5 @@
     <string name="Note">note</string>
     <string name="search">Search</string>
     <string name="logout">logout</string>
+    <string name="apiKey">f8074cf0e0bb46d6b532b057fd52947a</string>
 </resources>

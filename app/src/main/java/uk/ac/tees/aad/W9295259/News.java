@@ -39,7 +39,7 @@ public class News extends AppCompatActivity {
                 Builder().
                 url("https://newsapi.org/v2/everything?q=" +
                         getIntent().getExtras().get("words").toString() +
-                        "&apiKey=f8efb3bc73074d1fb98131e245f444f8").build();
+                        "&apiKey=f8074cf0e0bb46d6b532b057fd52947a").build();
 
         client.newCall(request).enqueue(new Callback() {
             @Override
